@@ -1,0 +1,29 @@
+{
+  "productName": "AlbiView",
+  "directories": {
+    "buildResources": ".",
+    "output": "release/"
+  },
+  "files": [
+    "dist-electron",
+    "dist"
+  ],
+  "win": {
+    "icon": "icon.ico",
+    "target": [
+      "portable"
+    ]
+  },
+  "mac": {
+    "icon": "icon.ico",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "icon.ico",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

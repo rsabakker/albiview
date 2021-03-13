@@ -1,27 +1,22 @@
 {
   "name": "albiview",
   "version": "0.0.0",
+  "author": "Robin Bakker",
+  "description": "Albion Data Viewer",
+  "main": "dist-electron/main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "ng build --base-href ./ && electron .",
+    "electron:build": "electron-builder build --publish=never",
+    "electron:ts": "tsc --project tsconfig.electron.json"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~11.2.4",
-    "@angular/common": "~11.2.4",
-    "@angular/compiler": "~11.2.4",
-    "@angular/core": "~11.2.4",
-    "@angular/forms": "~11.2.4",
-    "@angular/platform-browser": "~11.2.4",
-    "@angular/platform-browser-dynamic": "~11.2.4",
-    "@angular/router": "~11.2.4",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.3",
@@ -30,6 +25,8 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^14.14.34",
     "codelyzer": "^6.0.0",
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
